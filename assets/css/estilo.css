@@ -4,34 +4,57 @@
 }
 
 :root{
-    --preto-claro: #1D232A;
-    --preto-escuro: #15191C;
-    --branco: #FFFFFF;
-    --cinza: #95999C;
+    /* Cores */
+    --corpo: #1D232A;
+    --cabecalho: #1D232A;
+    --cabecalho-mobile: #15191C;
+    --menu-lateral: #15191C;
+    --cartao: #2C343A;
+    --fonte: #FFFFFF;
+    --fonte-alternativa: #95999C;
+    --links: #0480DC;
+    --botao: #0480DC;
+
+    /* Ícones */
+    --camisas: "\e900";
+    --carrinho: "\e901";
+    --inicio: "\e902";
+    --integrantes: "\e903";
+    --menu: "\e904";
+    --moeda: "\e905";
+    --notificacao: "\e906";
+    --pico: "\e908";
+    --picos: "\e909";
+    --pinturas: "\e90a";
+    --play: "\e90b";
+    --relogio: "\e90c";
+    --seta-baixo: "\e90d";
+    --videos: "\e90e";
+    --visualizacao: "\e90f";
 }
 
 body{
-    background-color: var(--preto-claro);
+    background-color: var(--corpo);
     font-family: 'Open Sans', 'icones', sans-serif;
-    color: var(--branco);
+    color: var(--fonte);
 }
 
 .cabecalho{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--preto-escuro);
+    background-color: var(--cabecalho-mobile);
     padding: 8px 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
 
 .cabecalho__menu i::before{
-    content: "\e904";
+    content: var(--menu);
     font-size: 24px;
 }
 
 .cabecalho__notificacao i::before{
-    content: "\e906";
+    content: var(--notificacao);
     font-size: 24px;
 }
 
@@ -42,9 +65,17 @@ body{
 .menu-lateral{
     display: flex;
     flex-direction: column;
-    background-color: var(--preto-escuro);
+    background-color: var(--cabecalho-mobile);
     width: 75vw;
     height: 100vh;
+    position: absolute;
+    left: -100vw;
+    transition: 0.5s;
+}
+
+.menu-lateral--ativo{
+    left: 0;
+    transition: 0.5s;
 }
 
 .menu-lateral__logo{
@@ -55,16 +86,16 @@ body{
 
 .menu-lateral__link{
     height: 64px;
-    color: var(--cinza);
+    color: var(--fonte-alternativa);
     padding-left: 64px;
     display: flex;
     align-items: center;
 }
 
 .menu-lateral__link--ativo{
-    color: var(--branco);
+    color: var(--fonte);
     padding-left: 56px;
-    border-left: 8px solid var(--branco);
+    border-left: 8px solid var(--fonte);
 }
 
 .menu-lateral__link::before{
@@ -77,25 +108,104 @@ body{
 }
 
 .link--inicio::before{
-    content: "\e902";
+    content: var(--inicio);
 }
 
 .link--videos::before{
-    content: "\e90e";
+    content: var(--videos);
 }
 
 .link--picos::before{
-    content: "\e908";
+    content: var(--videos);
 }
 
 .link--integrantes::before{
-    content: "\e903";
+    content: var(--integrantes);
 }
 
 .link--camisas::before{
-    content: "\e900";
+    content: var(--camisas);
 }
 
 .link--pinturas::before{
-    content: "\e90a";
+    content: var(--pinturas);
+}
+
+.principal{
+    padding: 24px 16px;
+}
+
+.titulo-pagina{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cartao{
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--cartao);
+}
+
+.cartao__conteudo{
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cartao__destaque{
+    grid-column: span 2;
+}
+
+.cartao__titulo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.cartao__perfil{
+    color: var(--fonte-alternativa);
+    font-size: 0.9rem;
+    grid-column: span 2;
+}
+
+.cartao__info{
+    display: flex;
+    align-items: center;
+    color: var(--fonte-alternativa);
+}
+
+.cartao__info--tempo::before{
+    content: var(--relogio);
+    margin-right: 8px;
+}
+
+.cartao__info--visualizacao::before{
+    content: var(--visualizacao);
+    margin-right: 8px;
+}
+
+.cartao__botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--botao);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.cartao__botao--play::before{
+    content: var(--play);
+    font-size: 24px;
+}
+
+.cartao__botao--destaque{
+    width: 100%;
+    grid-column: span 2;
+}
+
+.cartao__botao--destaque::before{
+    margin-right: 8px;
 }
