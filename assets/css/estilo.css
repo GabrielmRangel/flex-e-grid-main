@@ -311,6 +311,17 @@ body{
     margin-right: 8px;
 }
 
+.cartao__info--moeda::before{
+    content: var(--moeda);
+    font-size: 18px;
+    padding-right: 4px;
+}
+
+.cartao__botao--carrinho::before{
+    content: var(--carrinho);
+    font-size: 24px;
+}
+
 .cartao__botao{
     display: flex;
     justify-content: center;
@@ -428,7 +439,8 @@ body{
 }
 
 .titulo-secao{
-    font-size: 1.2rem;
+    font-size: 1.625rem;
     font-weight: 700;
+    line-height: 32px;
 }
 
