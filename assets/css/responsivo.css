@@ -16,6 +16,8 @@
     .cabecalho__notificacao i::before{
         content: var(--notificacao);
         font-size: 24px;
+        position: relative;
+        right: 10px;
     }
 
     .cabecalho__logo{
@@ -31,6 +33,8 @@
         color: var(--fonte-alternativa);
         padding: 8px 32px;
         border-right: 1px solid var(--fonte-alternativa);
+        position: relative;
+        left: 180px;
     }
 
     .cabecalho__perfil::before{
@@ -48,6 +52,10 @@
         content: var(--seta-baixo);
         color: var(--fonte);
         font-size: 1.5rem;
+    }
+
+    .notificaco--ativa i::after{
+        right: 20px;
     }
 
     .menu-lateral{
@@ -221,6 +229,7 @@
         color: var(--fonte-alternativa);
         padding: 8px 32px;
         border-right: 1px solid var(--fonte-alternativa);
+        left: 0;
     }
 
     .cabecalho__perfil::before{
@@ -238,6 +247,14 @@
         content: var(--seta-baixo);
         color: var(--fonte);
         font-size: 1.5rem;
+    }
+
+    .cabecalho__notificacao i::before{
+        right: 0;
+    }
+
+    .notificaco--ativa i::after{
+        right: 10px;
     }
 
     .menu-lateral{
