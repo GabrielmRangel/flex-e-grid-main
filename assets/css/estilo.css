@@ -259,3 +259,17 @@ body{
     line-height: 32px;
 }
 
+.picos-mapa {
+    width: 100%;
+    height: 468px;
+    background-image: url(../img/mapa-picos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.cartao__botao--pico::before {
+    content: var(--pico);
+    font-size: 24px;
+}

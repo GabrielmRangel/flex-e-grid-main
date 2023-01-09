@@ -34,7 +34,7 @@
         padding: 8px 32px;
         border-right: 1px solid var(--fonte-alternativa);
         position: relative;
-        left: 180px;
+        left: 20vw;
     }
 
     .cabecalho__perfil::before{
@@ -192,6 +192,26 @@
 
     .titulo-secao{
         grid-column: span 4;
+    }
+
+    .principal--picos {
+        grid-template-areas: 
+        "titulo-pagina titulo-pagina titulo-pagina"
+        "picos-mapa picos-mapa picos-favoritos"
+        "secao-picos-mais-visitados secao-picos-mais-visitados secao-picos-mais-visitados"
+        ;
+    }
+
+    .picos-mapa {
+        grid-area: picos-mapa;
+    }
+
+    .picos-favoritos {
+        grid-area: picos-favoritos;
+    }
+
+    .secao-picos-mais-visitados {
+        grid-area: secao-picos-mais-visitados;
     }
 }
 
@@ -383,5 +403,26 @@
     .titulo-secao{
         grid-column: span 4;
     }
+
+    .principal--picos {
+        grid-template-areas: 
+        "titulo-pagina titulo-pagina titulo-pagina"
+        "picos-mapa picos-mapa picos-favoritos"
+        "secao-picos-mais-visitados secao-picos-mais-visitados secao-picos-mais-visitados"
+        ;
+    }
+
+    .picos-mapa {
+        grid-area: picos-mapa;
+    }
+
+    .picos-favoritos {
+        grid-area: picos-favoritos;
+    }
+
+    .secao-picos-mais-visitados {
+        grid-area: secao-picos-mais-visitados;
+    }
+
 }
 
