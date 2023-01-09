@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HZC | Home</title>
-    <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+    <title>HZC | Picos</title>
+    <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/estilo.css">
-    <link rel="stylesheet" href="assets/css/responsivo.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+    <link rel="stylesheet" href="../css/picos.css">
 </head>
 <body>
     <header class="cabecalho">
         <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
 
-        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="cabecalho__logo">
+        <img src="../img/logo.svg" alt="Logotipo da HZC" class="cabecalho__logo">
         
         <p class="cabecalho__perfil">Bruno Lopes</p>
 
@@ -25,32 +26,21 @@
     </header>
 
     <nav class="menu-lateral">
-        <img src="assets/img/logo.svg" alt="Logotipo da HZC" class="menu-lateral__logo">
+        <img src="../img/logo.svg" alt="Logotipo da HZC" class="menu-lateral__logo">
 
-        <a href="#" class="menu-lateral__link link--inicio menu-lateral__link--ativo">Início</a>
+        <a href="../../index.html" class="menu-lateral__link link--inicio">Início</a>
         <a href="#" class="menu-lateral__link link--videos">Videos</a>
-        <a href="assets/nav/picos.html" class="menu-lateral__link link--picos">Picos</a>
+        <a href="#" class="menu-lateral__link link--picos menu-lateral__link--ativo">Picos</a>
         <a href="#" class="menu-lateral__link link--integrantes">Integrantes</a>
         <a href="#" class="menu-lateral__link link--camisas">Camisas</a>
         <a href="#" class="menu-lateral__link link--pinturas">Pinturas</a>
     </nav>
 
     <main class="principal">
-        <h2 class="titulo-pagina">Início</h2>
+        <h2 class="titulo-pagina">Picos</h2>
 
         <article class="cartao cartao--destaque destaque-video">
-            <img src="assets/img/banner-mobile_1.png" alt="Banner do cartão com letras estilizadas escrito: Life is..." class="cartao__imagem imagem--mobile">
-
-            <img src="assets/img/banner_1.png" alt="Banner do cartão com letras estilizadas escrito: Life is..." class="cartao__imagem imagem--desktop">
-
-            <div class="cartao__conteudo">
-                <h4 class="cartao__destaque">Vídeo em destaque</h4>
-                <h3 class="cartao__titulo">HZC - Life is... / 2021</h3>
-                <p class="cartao__perfil">Bruno Lopes</p>
-                <p class="cartao__info cartao__info--tempo">33 minutos</p>
-                <p class="cartao__info cartao__info--visualizacao">33 visualizações</p>
-                <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
-            </div>
+            <img src="../img/mapa-picos.png" alt="Mapa com os picos" class="cartao__imagem--picos">
         </article>
 
         <article class="cartao cartao--recentes videos-recentes">
@@ -296,6 +286,6 @@
         </section>
     </main>
     
-    <script src="main.js"></script>
+    <script src="../../main.js"></script>
 </body>
 </html>
